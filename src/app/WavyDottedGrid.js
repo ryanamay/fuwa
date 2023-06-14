@@ -109,7 +109,7 @@ const WavyDottedGrid = () => {
     };
   }, []);
 
-  return <div ref={containerRef} className='fixed top-0 left-0 w-full h-full -z-1'></div>;
+  return <div ref={containerRef} className='absolute top-0 left-0 w-full h-full overflow-hidden'></div>;
 };
 
 export default WavyDottedGrid;

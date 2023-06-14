@@ -5,7 +5,7 @@ import {BsGithub, BsTwitter, BsLinkedin } from 'react-icons/bs'
 
 const VerticalNavBar = () => {
   return (
-    <nav className="fixed z-0 top-0 min-h-screen w-20 ">
+    <nav className="fixed z-0 top-0 min-h-screen w-20 bg-white ">
       <div className="flex flex-col justify-between min-h-screen p-4">
         <ul className="space-y-6 flex flex-col items-center">
           <li>
@@ -17,14 +17,7 @@ const VerticalNavBar = () => {
           <li>
             <Link legacyBehavior href="/about">
               <a className="text-gray-800 hover:text-gray-900 vertical-text uppercase">
-                About
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="/contact">
-              <a className="text-gray-800 hover:text-gray-900 vertical-text uppercase">
-                contact
+                about
               </a>
             </Link>
           </li>
@@ -38,28 +31,35 @@ const VerticalNavBar = () => {
           <li>
             <Link legacyBehavior href="/contact">
               <a className="text-gray-800 hover:text-gray-900 vertical-text uppercase">
-                Blog
+                contact
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/blog">
+              <a className="text-gray-800 hover:text-gray-900 vertical-text uppercase">
+                blog
               </a>
             </Link>
           </li>
         </ul>
         <ul className="space-y-6 flex flex-col items-center">
           <li>
-            <Link legacyBehavior href="/contact">
+            <Link legacyBehavior href="/github">
               <a className="text-gray-800 hover:text-gray-900 text-2xl uppercase">
                 <BsGithub />
               </a>
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="/contact">
+            <Link legacyBehavior href="/twitter">
               <a className="text-gray-800 hover:text-gray-900 text-2xl uppercase">
                 <BsTwitter />
               </a>
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="/contact">
+            <Link legacyBehavior href="/linkedin">
               <a className="text-gray-800 hover:text-gray-900 text-2xl uppercase">
                 <BsLinkedin />
               </a>
