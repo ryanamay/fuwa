@@ -5,7 +5,7 @@ import {BsGithub, BsTwitter, BsLinkedin } from 'react-icons/bs'
 
 const VerticalNavBar = () => {
   return (
-    <nav className="fixed z-0 top-0 min-h-screen w-20 bg-white ">
+    <nav className="fixed z-2 top-0 min-h-screen w-20 bg-white ">
       <div className="flex flex-col justify-between min-h-screen p-4">
         <ul className="space-y-6 flex flex-col items-center">
           <li>

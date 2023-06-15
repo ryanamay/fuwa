@@ -30,3 +30,23 @@ body {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
 }
+@keyframes loadingAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  animation: loadingAnimation 1s ease-in-out infinite;
+}
+
+.loadingdiv {
+transition: opacity 0.5s ease;
+}
+
