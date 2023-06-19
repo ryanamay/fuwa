@@ -22,11 +22,11 @@ const WavyDottedGrid = () => {
     // Create the renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0xF2F1EF); // Set white background color
+    renderer.setClearColor(0x8785A2); // Set white background color
     containerRef.current.appendChild(renderer.domElement);
 
     // Create the material for the dots
-    const material = new THREE.PointsMaterial({ color: 0x777777, size: 0.1 });
+    const material = new THREE.PointsMaterial({ color: 0xF9F5F6, size: 0.1 });
 
     // Create the geometry for the dots
     const geometry = new THREE.BufferGeometry();
@@ -109,7 +109,7 @@ const WavyDottedGrid = () => {
     };
   }, []);
 
-  return <div ref={containerRef} className='fixed top-0 left-0 w-full h-full overflow-hidden'></div>;
+  return <div ref={containerRef} className='absolute top-0 left-0 w-full h-full overflow-hidden'></div>;
 };
 
 export default WavyDottedGrid;
