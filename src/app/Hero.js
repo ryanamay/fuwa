@@ -1,6 +1,6 @@
 import { IoChatboxOutline } from "react-icons/io5";
 import { GoFile } from "react-icons/go";
-
+import {BsFillArrowDownCircleFill} from "react-icons/bs";
 const Hero = () => {
   return (
     <div
@@ -18,18 +18,22 @@ const Hero = () => {
           </div>
         </div>
         <h1 className="text-[#FFF5E4] font-bold text-8xl">デベロッパー </h1>
-        <h1 className="border-[#b7b5db] bg-[#FFF5E4] border-t-8 border text-[#9291b1] text-2xl px-4 py-2">
+        <h1 className="border-[#b7b5db] bg-[#FFF5E4] border-t-8 border text-[#7d7c97] text-2xl px-4 py-2">
           not your typical full stack / devops developer{" "}
         </h1>
       </div>
       <div className="z-0 flex flex-col gap-2 ">
         <div className="z-0 border-[#b7b5db] bg-[#FFF5E4] border-t-8 border px-6 py-3 flex flex-row gap-2 items-center">
-          <IoChatboxOutline className="text-[#27374D] text-xl" />
-          <h1 className="text-[#27374D] text-xl">tell me something!</h1>
+          <IoChatboxOutline className="text-[#7d7c97] text-xl" />
+          <h1 className="text-[#7d7c97] text-xl">tell me something!</h1>
         </div>
         <div className="z-0 border-[#b7b5db] bg-[#FFF5E4] border-t-8 border px-6 py-3 flex flex-row gap-2 items-center">
-          <GoFile className="text-[#27374D] text-xl" />
-          <h1 className="text-[#27374D] text-xl">resume anyone?</h1>
+          <GoFile className="text-[#7d7c97] text-xl" />
+          <h1 className="text-[#7d7c97] text-xl">resume anyone?</h1>
+        </div>
+        <div className="z-0 text-[#FFF5E4]  flex flex-row gap-2 items-center my-2 loading">
+          <BsFillArrowDownCircleFill className="text-[#FFF5E4] text-xs" />
+          <h1 className="text-[#FFF5E4] text-xs">scroll down</h1>
         </div>
       </div>
     </div>
